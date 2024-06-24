@@ -7,15 +7,22 @@ composer require fifty-deg/sylius-scripts-plugin
 
 2. Add `FiftyDeg\SyliusScriptsPlugin\FiftyDegSyliusScriptsPlugin::class => ['all' => true],` into `/config/bundles.php`
 
-3. Register vendor settings by adding the following code snippet in `config/routes.yaml`:  
+3. Register vendor services configuration by adding the following code snippet in `config/services.yaml`
+```yaml
+imports:
+    - { resource: "@FiftyDegSyliusScriptsPlugin/Resources/config/vendor.yaml" }
+```
+
+4. Register admin routes by adding the following code snippet in `config/routes.yaml`:  
 
 ```yaml
 fiftydeg_sylius_scripts_plugin:
     resource: "@FiftyDegSyliusScriptsPlugin/Resources/config/routes.yaml"
 ```
-4. Create the `fiftydeg_sylius_scripts.yaml` file in `<project_root>/config/packages`
 
-5. In `fiftydeg_sylius_scripts.yaml` define the sylius template events where to allow scripts injection like in the example below
+5. Create the `fiftydeg_sylius_scripts.yaml` file in `<project_root>/config/packages`
+
+6. In `fiftydeg_sylius_scripts.yaml` define the sylius template events where to allow scripts injection like in the example below
 ```yaml
 fifty_deg_sylius_scripts:
     template_events: [
@@ -26,7 +33,8 @@ fifty_deg_sylius_scripts:
     ]
 
 ```
-6. Template events will be shown in the `Embed Code > Scripts` admin menu.
+
+7. Template events will be shown in the `Embed Code > Scripts` admin menu.
 ---
 <br/>
 

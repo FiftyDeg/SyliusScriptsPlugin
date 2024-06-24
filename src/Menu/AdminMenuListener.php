@@ -16,7 +16,7 @@ final class AdminMenuListener
 
         $newSubmenu
             ->addChild('shop-settings-fifty-deg-scripts-script-index', [
-                'route' => 'fiftydeg_admin_sylius_scripts_plugin.entity.script_index',
+                'route' => 'fiftydeg_admin_sylius_scripts_plugin_entity_script_index',
             ])
             // TODO: add translation
             ->setLabel('Scripts')

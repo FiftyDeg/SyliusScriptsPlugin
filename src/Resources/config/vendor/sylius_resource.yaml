@@ -1,6 +1,7 @@
 sylius_resource:
     resources:
-        fiftydeg.sylius_scripts_plugin.entity.script:
+        # IMPORTANT: Use just one dot. If you use fifty_deg.plugin_name.resource_name, only fifty_deg.plugin_name will be registered in Sylius <= v1.11
+        fiftydeg.sylius_scripts_plugin_entity_script:
             driver: doctrine/orm
             classes:
                 model: FiftyDeg\SyliusScriptsPlugin\Entity\Script

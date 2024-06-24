@@ -1,6 +1,6 @@
 <p align="center">
     <a href="https://sylius.com" target="_blank">
-        <img src="doc/images/sylius.png" width="200px"/>
+        <img src="./docs/images/sylius.png" width="200px"/>
     </a>
 </p>
 
@@ -13,14 +13,14 @@
 <p align="center">Developed with :heart: by</p>
 <p align="center">
     <a href="https://fiftydeg.com" target="_blank">
-        <img src="doc/images/fd.png" />
+        <img src="./docs/images/fd.png" />
     </a>
 </p>
 
 # About the plugin
 This plugin allows store managers to inject scripts (such as GTM or Structured Data) in those Sylius template events enabled by developers.
 
-<img src="doc/images/screenshot.png" />
+<img src="./docs/images/screenshot.png" />
 
 ## Documentation
 
@@ -28,9 +28,9 @@ For a comprehensive guide on Sylius Plugins development please go to Sylius docu
 there you will find the <a href="https://docs.sylius.com/en/latest/plugin-development-guide/index.html">Plugin Development Guide</a>, that is full of examples.
 
 <ul>
-<li><a href="doc/installation.md">Installation</a></li>
-<li><a href="doc/development.md">Development</a></li>
-<li><a href="doc/testing.md">Testing</a></li>
+<li><a href="./docs/installation.md">Installation</a></li>
+<li><a href="./docs/development.md">Development</a></li>
+<li><a href="./docs/testing.md">Testing</a></li>
 </ul>
 
 # Fifty Deg

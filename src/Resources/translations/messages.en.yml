@@ -1,13 +1,7 @@
 fiftydeg:
   ui:
-    sylius_scripts_plugin:
-        entity:
-            scripts: Fifty Deg Sylius Scripts Plugin
+    sylius_scripts_plugin_entity_scripts: Fifty Deg Sylius Scripts Plugin
 
-    edit_sylius_scripts_plugin:
-        entity:
-            script: Edit script
+    edit_sylius_scripts_plugin_entity_script: Edit script
 
-    new_sylius_scripts_plugin:
-        entity:
-            script: New script
+    new_sylius_scripts_plugin_entity_script: New script

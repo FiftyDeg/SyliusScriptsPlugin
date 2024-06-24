@@ -1,6 +1,6 @@
 sylius_grid:
     grids:
-        fiftydeg.sylius_scripts_plugin.entity.script:
+        fiftydeg.sylius_scripts_plugin_entity_script:
             driver:
                 name: doctrine/orm
                 options:
