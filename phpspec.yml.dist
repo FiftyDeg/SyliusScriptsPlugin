@@ -1,0 +1,4 @@
+suites:
+    main:
+        namespace: FiftyDeg\SyliusScriptsPlugin
+        psr4_prefix: FiftyDeg\SyliusScriptsPlugin

@@ -1,0 +1,2 @@
+fiftydeg_sylius_scripts_plugin:
+    resource: "@FiftyDegSyliusScriptsPlugin/Resources/config/routes.yaml"

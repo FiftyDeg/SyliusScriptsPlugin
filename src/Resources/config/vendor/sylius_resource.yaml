@@ -1,0 +1,13 @@
+sylius_resource:
+    resources:
+        fiftydeg.sylius_scripts_plugin.entity.script:
+            driver: doctrine/orm
+            classes:
+                model: FiftyDeg\SyliusScriptsPlugin\Entity\Script
+                repository: FiftyDeg\SyliusScriptsPlugin\Repository\ScriptRepository
+                form: FiftyDeg\SyliusScriptsPlugin\Form\Type\ScriptType
+            translation:
+                classes:
+                    model: FiftyDeg\SyliusScriptsPlugin\Entity\ScriptTranslation
+                    repository: FiftyDeg\SyliusScriptsPlugin\Repository\ScriptTranslationRepository
+                    form: FiftyDeg\SyliusScriptsPlugin\Form\Type\ScriptTranslationType

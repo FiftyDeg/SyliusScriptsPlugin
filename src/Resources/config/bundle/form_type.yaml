@@ -1,0 +1,8 @@
+services:
+
+    fiftydeg_sylius_scripts_plugin.form.type.category_image_type:
+        class: FiftyDeg\SyliusScriptsPlugin\Form\Type\TemplateEventChoiceType
+        arguments:
+            - "@fiftydeg.sylius_scripts_plugin.config_loader.config_loader"
+        tags:
+            - { name: form.type }

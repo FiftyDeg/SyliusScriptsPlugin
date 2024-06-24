@@ -1,0 +1,52 @@
+sylius_fixtures:
+    suites:
+        fiftydeg:
+            fixtures:
+                fiftydeg_sylius_scripts_plugins:
+                    options:
+                        scripts:
+                            - { 
+                                name: 'Test Head Script', 
+                                template_event: 'sylius.shop.layout.head', 
+                                content: "
+                                    <script id='syliusShopLayoutHeadScript'>
+                                        document.addEventListener('DOMContentLoaded', function () {
+                                            const el = document.createElement('div');
+                                            el.id = 'syliusShopLayoutHead';
+                                            document.body.appendChild(el);
+                                        });
+                                    </script>
+                                ",
+                                locale: 'en_US',
+                                channel: 'FASHION_WEB'
+                            }
+                            - { 
+                                name: 'Test Before Body Script', 
+                                template_event: 'sylius.shop.layout.before_body', 
+                                content: "
+                                    <script id='syliusShopLayoutBeforeBodyScript'>
+                                        document.addEventListener('DOMContentLoaded', function () {
+                                            const el = document.createElement('div');
+                                            el.id = 'syliusShopLayoutBeforeBody';
+                                            document.body.appendChild(el);
+                                        });
+                                    </script>
+                                ", 
+                                locale: 'en_US',
+                                channel: 'FASHION_WEB'
+                            }
+                            - { 
+                                name: 'Test After Body Script', 
+                                template_event: 'sylius.shop.layout.after_body', 
+                                content: "
+                                    <script id='syliusShopLayoutAfterBodyScript'>
+                                        document.addEventListener('DOMContentLoaded', function () {
+                                            const el = document.createElement('div');
+                                            el.id = 'syliusShopLayoutAfterBody';
+                                            document.body.appendChild(el);
+                                        });
+                                    </script>
+                                ",
+                                locale: 'en_US',
+                                channel: 'FASHION_WEB'
+                            }

@@ -1,0 +1,35 @@
+{
+  "html.format.wrapAttributes": "force-expand-multiline",
+  "eslint.format.enable": true,
+  "eslint.alwaysShowStatus": true,
+  "stylelint.enable": true,
+  "[javascript]": {
+    "editor.maxTokenizationLineLength": 2500,
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+  },
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit",
+    "source.fixAll.stylelint": "explicit"
+  },
+  "files.exclude": {
+    "**/.git": false,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/Thumbs.db": true
+  },
+  "stylelint.validate": [
+    "scss"
+  ],
+  "files.associations": {
+    "*.nginx.conf": "NGINX"
+  },
+  "phpstan.configFile": "phpstan.neon",
+  "phpstan.options": [
+    "--level=5",
+    "analyze src"
+  ],
+  "php.validate.enable": false,
+  "php.validate.executablePath": null
+}

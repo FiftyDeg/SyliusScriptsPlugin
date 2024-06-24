@@ -1,0 +1,13 @@
+fiftydeg:
+  ui:
+    sylius_scripts_plugin:
+        entity:
+            scripts: Fifty Deg Sylius Scripts Plugin
+
+    edit_sylius_scripts_plugin:
+        entity:
+            script: Edit script
+
+    new_sylius_scripts_plugin:
+        entity:
+            script: New script

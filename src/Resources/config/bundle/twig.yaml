@@ -1,0 +1,8 @@
+services:
+
+    fiftydeg.sylius_scripts_plugin.twig.fifty_deg_scripts_extension:
+        class: FiftyDeg\SyliusScriptsPlugin\Twig\FiftyDegScriptsExtension
+        arguments:
+            - '@sylius.context.channel'
+            - '@fiftydeg.sylius_scripts_plugin.repository.script_repository'
+        tags: ["twig.extension"]

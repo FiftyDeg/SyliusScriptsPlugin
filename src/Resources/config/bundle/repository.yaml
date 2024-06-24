@@ -1,0 +1,11 @@
+services:
+
+    fiftydeg.sylius_scripts_plugin.repository.script_repository:
+        class: FiftyDeg\SyliusScriptsPlugin\Repository\ScriptRepository
+        arguments:
+            - '@doctrine.orm.default_entity_manager'
+
+    fiftydeg.sylius_scripts_plugin.repository.script_translation_repository:
+        class: FiftyDeg\SyliusScriptsPlugin\Repository\ScriptTranslationRepository
+        arguments:
+            - '@doctrine.orm.default_entity_manager'

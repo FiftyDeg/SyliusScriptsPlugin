@@ -1,0 +1,24 @@
+sylius_grid:
+    grids:
+        fiftydeg.sylius_scripts_plugin.entity.script:
+            driver:
+                name: doctrine/orm
+                options:
+                    class: FiftyDeg\SyliusScriptsPlugin\Entity\Script
+            fields:
+                name:
+                    type: string
+                    label: sylius.ui.name
+                    sortable: true
+            sorting:
+                name: asc
+            limits: [ 10, 25, 50, 100 ]
+            actions:
+                main:
+                    create:
+                        type: create
+                item:
+                    update:
+                        type: update
+                    delete:
+                        type: delete

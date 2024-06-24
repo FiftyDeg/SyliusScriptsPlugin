@@ -1,0 +1,10 @@
+services:
+
+    fiftydeg.sylius_scripts_plugin.fixtures.behat_fixtures:
+        class: FiftyDeg\SyliusScriptsPlugin\Fixtures\BehatFixtures
+        arguments:
+            - '%kernel.environment%'
+            - '@fiftydeg.sylius_scripts_plugin.repository.script_repository'
+            - '@sylius.repository.channel'
+        tags:
+            - { name: 'sylius_fixtures.fixture' }

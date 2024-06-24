@@ -1,0 +1,12 @@
+services:
+    _defaults: { public: true }
+
+    fiftydeg_sylius_scripts_plugin.behat.page.shop.home_page:
+      class: Tests\FiftyDeg\SyliusScriptsPlugin\Behat\Page\Shop\HomePage
+      parent: sylius.behat.symfony_page
+
+
+    fiftydeg_sylius_scripts_plugin.behat.context.ui.shop.rendering_scripts_context:
+      class: Tests\FiftyDeg\SyliusScriptsPlugin\Behat\Context\Ui\Shop\RenderingScriptsContext
+      arguments:
+        - '@fiftydeg_sylius_scripts_plugin.behat.page.shop.home_page'

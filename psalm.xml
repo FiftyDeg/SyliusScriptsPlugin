@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<psalm
+    errorLevel="1"
+    resolveFromConfigFile="true"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns="https://getpsalm.org/schema/config"
+    xsi:schemaLocation="https://getpsalm.org/schema/config vendor/vimeo/psalm/config.xsd"
+>
+    <projectFiles>
+        <directory name="src" />
+        <ignoreFiles>
+            <directory name="vendor" />
+        </ignoreFiles>
+    </projectFiles>
+
+    <issueHandlers>
+        <PossiblyNullReference>
+            <errorLevel type="suppress">
+                <file name="src/DependencyInjection/Configuration.php" />
+                <file name="src/Fixtures/BehatFixtures.php" />
+            </errorLevel>
+        </PossiblyNullReference>
+
+        <UndefinedInterfaceMethod>
+            <errorLevel type="suppress">
+                <file name="src/DependencyInjection/Configuration.php" />
+                <file name="src/Fixtures/BehatFixtures.php" />
+            </errorLevel>
+        </UndefinedInterfaceMethod>
+
+        <MixedMethodCall>
+            <errorLevel type="suppress">
+                <file name="src/DependencyInjection/Configuration.php" />
+                <file name="src/Fixtures/BehatFixtures.php" />
+            </errorLevel>
+        </MixedMethodCall>
+
+        <PropertyNotSetInConstructor>
+            <errorLevel type="suppress">
+                <file name="src/Entity/Script.php" />
+                <file name="src/Entity/ScriptTranslation.php" />
+            </errorLevel>
+        </PropertyNotSetInConstructor>
+
+        <MissingTemplateParam>
+            <errorLevel type="suppress">
+                <file name="src/Repository/ScriptRepositoryInterface.php" />
+                <file name="src/Repository/ScriptTranslationRepositoryInterface.php" />
+            </errorLevel>
+        </MissingTemplateParam>
+
+        <ArgumentTypeCoercion>
+            <errorLevel type="suppress">
+                <file name="src/Fixtures/BehatFixtures.php" />
+            </errorLevel>
+        </ArgumentTypeCoercion>
+    </issueHandlers>
+</psalm>

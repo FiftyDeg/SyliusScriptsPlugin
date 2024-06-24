@@ -1,0 +1,16 @@
+# Put your Behat suites definitions here
+
+default:
+    suites: 
+        rendering_scripts:
+            contexts:
+                - sylius.behat.context.setup.channel
+                - sylius.behat.context.setup.product
+                - sylius.behat.context.setup.customer
+                - sylius.behat.context.setup.shop_security
+                - sylius.behat.context.transform.lexical
+                - sylius.behat.context.transform.product
+                - sylius.behat.context.transform.channel
+                - fiftydeg_sylius_scripts_plugin.behat.context.ui.shop.rendering_scripts_context
+            filters:
+                tags: "@rendering_scripts&&@ui"

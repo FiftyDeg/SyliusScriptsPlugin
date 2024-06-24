@@ -1,0 +1,6 @@
+services:
+
+    fiftydeg.sylius_scripts_plugin.config_loader.config_loader:
+        class: FiftyDeg\SyliusScriptsPlugin\ConfigLoader\ConfigLoader
+        arguments:
+            - '@parameter_bag'
