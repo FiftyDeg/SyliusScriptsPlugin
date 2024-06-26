@@ -30,7 +30,7 @@ class ScriptTranslation extends AbstractTranslation implements ScriptTranslation
      */
     protected ?int $id;
 
-    /** @ORM\Column(type="string", name="content", nullable=true) */
+    /** @ORM\Column(type="text", name="content", nullable=true) */
     #[FormType(TextareaType::class, ['required' => true])]
     #[NotBlank]
     #[NotNull]
